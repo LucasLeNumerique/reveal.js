@@ -8,28 +8,50 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/blood.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+	.fragment.blur {
+		filter: blur(5px);
+	}
+	.fragment.blur.visible {
+		filter: none;
+	}
+	</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown data-background-image="examples/assets/bg_dark_red.jpg">
+				<section data-markdown data-background-image="examples/assets/bg_dark.jpg">
 					<textarea data-template>
 						# REVEAL JS
-						Bienvenue, prenez-place <br>
-						présenté par [Lucas, votre développeur](https://www.linkedin.com/in/lucas-schrever/)
+						*présenté par [Lucas](https://www.linkedin.com/in/lucas-schrever/), 
+						<br> votre développeur*
 					</textarea>
 				</section>
-				<section data-markdown data-background-gradient="radial-gradient(#2E0000, black)">
-					<textarea data-template>
-						## Sommaire
-						<p class="fragment">C'est quoi Reveal JS ?</p>
-						<p class="fragment">Pourquoi ?</p>
-						<p class="fragment">Comment ?</p>
-					</textarea>
+				<section>
+					<section data-background-gradient="radial-gradient(#0030A9, #000C2A)">
+						<h2>Plan d'attaque</h2>
+					</section>
+					<section data-background-gradient="radial-gradient(#0096B8, #007C60)">
+						<h3>Fonctionnalités</h3>  
+						<p class="fragment custom blur">Comportement des slides</p>
+						<p class="fragment custom blur">Couleurs, arrière-plans, médias </p>
+						<p class="fragment custom blur">Fragments, niveaux (layouts)</p>
+						<p class="fragment custom blur">Démonstration de lignes de code</p>
+						<p class="fragment custom blur">Animation</p>
+					</section>
+					<section data-background-gradient="radial-gradient(#865100, orange)">
+						<h3>Dans le code source</h3>  
+						<p class="fragment custom blur">Architecture du projet</p>
+						<p class="fragment custom blur">'index.html'</p>
+						<p class="fragment custom blur">Thèmes</p>
+					</section>
+					<section data-background-gradient="radial-gradient(#B42929, #460000)">
+						<h3>Pourquoi Reveal JS ?</h3>  
+					</section>
 				</section>
 			</div>
 		</div>
